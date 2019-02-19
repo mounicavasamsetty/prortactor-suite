@@ -11,6 +11,9 @@ exports.config = {
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
         'browserName': 'chrome',
+        chromeOptions: {
+      args: [ "--headless", "--disable-gpu", "--window-size=800x600" ]
+    }
         //'phantomjs.binary.path': './node_modules/phantomjs/bin/phantomjs'
     },
     // Framework to use. Jasmine is recommended.
